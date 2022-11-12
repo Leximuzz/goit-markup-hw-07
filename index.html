@@ -45,51 +45,51 @@
   </header>
   <main>
     <!--hero section-->
-    <section class="hero-style">
+    <section class="hero">
       <div class="container">
-        <h1 class="hero-text">Ефективні рішення для вашого бізнесу</h1>
-        <button data-modal-open class="hero-batton" type="button">Замовити послугу</button>
+        <h1 class="hero__text">Ефективні рішення для вашого бізнесу</h1>
+        <button data-modal-open class="hero__batton" type="button">Замовити послугу</button>
         <div class="backdrop is-hidden" data-modal>
           <div class="modal">
-            <button class="modal-close-btn" type="button" data-modal-close>
-              <svg class="modal-close-btn-style">
+            <button class="close-btn" type="button" data-modal-close>
+              <svg class="close-btn__modal">
                 <use href="./images/icons.svg#close-btn"></use>
               </svg>
             </button>
-            <form class="modal-form">
-              <label class="modal-title">Залиште свої дані, ми вам передзвонимо</label>
+            <form class="modal__form">
+              <label class="modal__title">Залиште свої дані, ми вам передзвонимо</label>
 
-              <label for="name" class="person-name lable-font-stile">Ім'я</label>
-              <div class="text-area person-name-field">
-                <svg class="icon-name">
+              <label for="name" class="modal__person-name modal__lable">Ім'я</label>
+              <div class="modal__name--action">
+                <svg class="modal__icon-person">
                   <use href="./images/icons.svg#icon-person" width="18" height="18"></use>
                 </svg>
-                <input class="input-field" type="text" name="name" id="name">
+                <input class="modal__input-field" type="text" name="name" id="name">
               </div>
 
-              <label for="tel" class="person-tel lable-font-stile">Телефон</label>
-              <div class="text-area person-tel-field">
-                <svg class="icon-tel ">
+              <label for="tel" class="modal__person-tel modal__lable">Телефон</label>
+              <div class="modal__tel--action">
+                <svg class="modal__icon-tel">
                   <use href="./images/icons.svg#icon-phone" width="18" height="18"></use>
                 </svg>
-                <input class="input-field" type="tel" name="tel" id="tel">
+                <input class="modal__input-field" type="tel" name="tel" id="tel">
               </div>
 
-              <label for="email" class="person-email lable-font-stile">Пошта</label>
-              <div class="text-area person-mail-field">
-                <svg class="icon-mail">
+              <label for="email" class="modal__person-email modal__lable">Пошта</label>
+              <div class="modal__mail--action">
+                <svg class="modal__icon-mail">
                   <use href="./images/icons.svg#icon-mail" width="18" height="18"></use>
                 </svg>
-                <input class="input-field" type="email" name="email" id="email">
+                <input class="modal__input-field" type="email" name="email" id="email">
               </div>
-              <label for="comment" class="person-comment lable-font-stile">Коментар</label>
+              <label for="comment" class="modal__person-comment modal__lable">Коментар</label>
 
               <textarea class="coment-text-field" rows="6" name="comment" id="comment"
                 placeholder="Введіть текст"></textarea>
 
-              <input id="checkbox" class="chekbox-input visually-hidden" type="checkbox" name="checkbox">
-              <label for="checkbox" class="chekbox-lable">Погоджуюся з розсилкою та приймаю <a href="#"
-                  class="chekbox-lable-text">Умови договору</a></label>
+              <input id="checkbox" class="modal__chekbox visually-hidden" type="checkbox" name="checkbox">
+              <label for="checkbox" class="modal__chekbox-lable">Погоджуюся з розсилкою та приймаю 
+                <a href="#" class="modal__chekbox-text">Умови договору</a></label>
 
                   <button class="modal-send-button">Відправити</button>
             </form>
