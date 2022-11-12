@@ -93,7 +93,7 @@ li {
   gap: 50px;
 }
 
-.header__logo {
+.logo {
   display: block;
   font-family: 'Raleway';
   font-weight: 700;
@@ -153,12 +153,12 @@ li {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }*/
 
-.header__list--selection {
+.header__ithem--selection {
   /*selected-link*/
   color: var(--main-blue-color);
 }
 
-.header__list--selection::after {
+.header__ithem--selection::after {
   /*selected-link::after*/
   display: block;
   opacity: 1;
@@ -171,7 +171,7 @@ li {
 }
 
 
-.address-link__icon {
+.address-list__icon {
   fill: var(--text-color);
   width: 16px;
   height: 16px;
@@ -184,7 +184,7 @@ li {
   justify-content: center;
 }
 
-.address-link {
+.address-list__link {
   display: flex;
   font-weight: 500;
   font-size: 14px;
@@ -199,24 +199,24 @@ li {
   margin-left: auto;
 }
 
-.address-link:hover {
+.address-list__link:hover {
   color: var(--main-blue-color);
 
 }
 
-.address-link:hover::after {
+.address-list__link:hover::after {
   color: var(--address-color);
 }
 
-.address-link:hover .address-link__icon {
+.address-list__link:hover .address-list__icon {
   fill: var(--main-blue-color);
 }
 
-.address-link:focus .address-link__icon {
+.address-list__link:focus .address-list__icon {
   fill: var(--main-blue-color);
 }
 
-.address-link:focus {
+.address-list__link:focus {
   color: var(--main-blue-color);
 }
 
@@ -653,7 +653,7 @@ li {
 
 /*_____________________________our team*/
 
-.our-team--background {
+.our-team {
   padding: 94px 0;
   background-color: var(--section-light-bg);
   margin: 0 auto;
@@ -801,35 +801,24 @@ li {
 
 /*__________________________________________________footer*/
 
-.footer-fon {
+.footer {
   background-color: var(--section-dark-bg);
   padding-top: 60px;
   padding-bottom: 60px;
 }
-
+.footer__flex {
+  display: flex;
+  align-items: baseline;
+}
 .footer-address {
   display: flex;
 }
 
-.footer-logo {
-  font-family: 'Raleway';
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
+.footer__logo--white {
   color: var(--white-color);
 }
 
-.footer-logo:hover {
-  color: var(--white-color);
-
-}
-
-.footer-logo:focus {
-  color: var(--white-color);
-  outline: none;
-}
-
-.address-link-footer {
+.footer__address-link--color {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
@@ -838,27 +827,14 @@ li {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.address-link-footer:hover {
-  color: var(--main-blue-color);
-
-}
-
-.footer-address-style {
+.footer__address {
   margin-top: 20px;
-}
-
-.footer-address-color {
   font-style: normal;
   color: var(--white-color);
 }
 
-.footer-margin {
+.footer__list {
   margin-top: 9px;
-}
-
-.footer-flex {
-  display: flex;
-  align-items: baseline;
 }
 
 .footer-icons-list {
@@ -875,49 +851,25 @@ li {
   margin-bottom: 20px;
 }
 
-.footer-social__link {
-  width: 44px;
-  height: 44px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
+.social__link--color {
+    background-color: rgba(255, 255, 255, 0.1);
   transition:
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-social__icon {
+.social__icon--color {
   width: 20px;
   height: 20px;
   fill: var(--white-color);
 }
-
-.footer-social__link:hover {
-  background-color: var(--main-blue-color);
-}
-
-.footer-social__link:focus {
-  background-color: var(--main-blue-color);
-  outline: none;
-}
-
-.footer-social__link:hover .social__icon {
-  fill: var(--white-color);
-}
-
-.footer-social__link:focus .social__icon {
-  fill: var(--white-color);
-  outline: none;
-}
-
-.subsribe-form {
+/*_________________________subsribe-form_____________________*/
+.subsribe__form {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.subscribe-lable {
+.subscribe__lable {
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
@@ -928,7 +880,7 @@ li {
   color: var(--white-color);
 }
 
-.form-flex {
+.footer__subscribe {
   display: flex;
   width: 570px;
   height: 86px;
@@ -936,7 +888,7 @@ li {
   align-items: flex-end;
 }
 
-.input-form-style {
+.subscribe__input {
   width: 358px;
   height: 50px;
   border-radius: 4px;
@@ -947,17 +899,17 @@ li {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.subscribe-icon {
+.subscribe__icon {
   width: 24px;
   height: 24px;
   margin-left: 10px;
 }
 
-.subscribe-text {
+.subscribe__text {
   padding-bottom: 20px;
 }
 
-.subsribe-button {
+.subsribe__button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -980,7 +932,7 @@ li {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.subsribe-button:hover {
+.subsribe__button:hover {
   background-color: var(--blue-batton-hover);
 }
 
