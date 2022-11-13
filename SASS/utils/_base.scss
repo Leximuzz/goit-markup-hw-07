@@ -9,7 +9,6 @@ a {
     color: var(--main-font-color);
     text-decoration: none;
 }
-
 a:hover {
     color: var(--main-blue-color);
 }
@@ -17,17 +16,14 @@ a:hover {
 a:focus {
     color: var(--main-blue-color);
 }
-
 ul {
     list-style: none;
     padding-left: 0;
     padding-inline-start: 0;
 }
-
 img {
     display: block;
 }
-
 h1,
 h2,
 h3,
