@@ -943,23 +943,16 @@ li {
 }
 
 /*_______________________________________page-portfolio*/
-.portfolio-section {
+.portfolio {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-
-.portfolio-container {
-  width: 1171px;
-  margin: 94px auto;
-}
-
-.filter-list-flex {
+.filter-list {
   display: flex;
   justify-content: center;
   gap: 8px;
 }
-
-.button-style {
+.filter-list__button {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -973,18 +966,16 @@ li {
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.button-style:hover {
+.filter-list__button:hover {
   color: var(--white-color);
   background-color: var(--main-blue-color);
   box-shadow:
     0px 3px 1px rgba(0, 0, 0, 0.1),
     0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-
 }
 
-.button-style:focus {
+.filter-list__button:focus {
   color: var(--white-color);
   background-color: var(--main-blue-color);
   box-shadow:
@@ -993,75 +984,38 @@ li {
     0px 2px 2px rgba(0, 0, 0, 0.12);
   outline: none;
 }
-
-.curent-filter {
+.filter-list__button--selected {
   color: var(--white-color);
   background-color: var(--main-blue-color);
 }
-
-.curent-filter:hover {
+.filter-list__button--selected:hover {
   box-shadow: none;
 }
-
-.curent-filter:focus {
+.filter-list__button--selected:focus {
   box-shadow: none;
   outline: none;
 }
 
-.h3-portfolio {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  color: var(--main-font-color);
 
-}
 
-.p-portfolio {
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.03em;
-  color: var(--address-color);
-  margin-top: 4px;
-}
-
-.portfolio-card-flex {
+.portfolio__list {
   display: flex;
   flex-wrap: wrap;
   margin-top: 50px;
   gap: 30px;
 }
 
-.portfolio-card {
+.portfolio__link {
   width: 370px;
   background-color: var(--white-color);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-card-img-size {
+.card__img {
   width: 100%;
 }
 
-.card-shadow {
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.card-shadow:hover {
-  box-shadow:
-    2px 3px 1px rgba(0, 0, 0, 0.1),
-    -2px 3px 2px rgba(0, 0, 0, 0.08),
-    0px 3px 2px rgba(0, 0, 0, 0.12);
-}
-
-.card-shadow:focus {
-  box-shadow:
-    0px 3px 1px rgba(0, 0, 0, 0.1),
-    0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-  outline: none;
-}
-
-.card-description {
+.card__description {
   background-color: var(--white-color);
   padding: 24px 20px;
   border-left: 1px solid var(--card-border);
@@ -1069,12 +1023,26 @@ li {
   border-bottom: 1px solid var(--card-border);
 }
 
-.porfolio-description {
+.card__content/*porfolio-description*/ {
   position: relative;
   overflow: hidden;
 }
+.card__h3 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--main-font-color);
+}
 
-.site-description {
+.card__p {
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: var(--address-color);
+  margin-top: 4px;
+}
+.site__description {
   position: absolute;
   z-index: 0;
   height: 100%;
@@ -1091,22 +1059,22 @@ li {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-card:focus .site-description {
+.portfolio__card:focus .site__description {
   transform: translateY(0);
 }
 
-.portfolio-card:hover .site-description {
+.portfolio__card:hover .site__description {
   transform: translateY(0);
 }
 
-.portfolio-card:hover {
+.portfolio__card:hover  {
   box-shadow:
     0px 3px 1px rgba(0, 0, 0, 0.1),
     0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.portfolio-card:focus {
+.portfolio__card:focus {
   box-shadow:
     0px 3px 1px rgba(0, 0, 0, 0.1),
     0px 1px 2px rgba(0, 0, 0, 0.08),
